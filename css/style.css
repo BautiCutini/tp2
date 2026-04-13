@@ -1,33 +1,38 @@
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
 
-/* Paletas de colores que pueden usar: */
+body {
+  background: linear-gradient(to bottom, red, black);
+  color: white;
+}
 
-/* Paleta 1: */
-/*:root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
-}*/
+main section div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
 
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
+main section div div {
+  text-align: center;
+  margin: 10px;
+  max-width: 200px;
+}
 
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
-  --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
-  --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
+h3 {
+  color: white;
+}
+
+p {
+  color: lightgray;
+}
+
+.description {
+  color: white;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+a {
+  color: yellow;
+}
+
