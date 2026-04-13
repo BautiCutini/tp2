@@ -3,6 +3,72 @@
 body {
   background: linear-gradient(to bottom, red, black);
   color: white;
+  font-family: 'Faster One', cursive;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+header > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+header nav {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+header nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+header nav a.active {
+  color: black;
+  background: yellow;
 }
 
 main section div {
@@ -15,7 +81,15 @@ main section div {
 main section div div {
   text-align: center;
   margin: 10px;
-  max-width: 200px;
+  max-width: 500px;
+}
+
+main section div div img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 h3 {
