@@ -1,0 +1,143 @@
+/* 🔷 Variables de colores */
+:root {
+  --color-primary: #c0392b;
+  --color-primary-dark: #96281b;
+  --color-bg: #111111;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #141414;
+  --color-border: #2e2e2e;
+  --color-text: #f0f0f0;
+  --color-text-muted: #888888;
+  --color-input-bg: #222222;
+}
+
+/* 🔷 Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* 🔷 Contenedor */
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* 🔷 Formulario */
+form {
+  display: grid;
+  gap: 1.5rem;
+
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+
+  background: var(--color-surface);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+/* 🔷 Título */
+form h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* 🔷 Campos */
+form > div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* 🔷 Labels */
+form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* 🔷 Inputs */
+form input {
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-input-bg);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+/* 🔷 Focus */
+form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px rgba(192, 57, 43, 0.4);
+}
+
+/* 🔷 Placeholder */
+form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* 🔷 Botón */
+form button {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+
+  background: var(--color-primary);
+  color: #fff;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* 🔷 Hover */
+form button:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* 🔷 Click */
+form button:active {
+  transform: translateY(0);
+}
+
+/* 🔷 Texto */
+form p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* 🔷 Link */
+form a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* 🔷 Responsive */
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  form h2 {
+    font-size: 1.5rem;
+  }
+}
