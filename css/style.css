@@ -1,33 +1,180 @@
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
-@import url('./components/registro.css');
-/* Paletas de colores que pueden usar: */
 
-/* Paleta 1: */
-/*:root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
-}*/
+body {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), black);
+  color: white;
+  font-family: 'Faster One', cursive;
+}
 
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
 
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
-  --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
-  --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
+header > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+main section div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+main section div div {
+  text-align: center;
+  margin: 10px;
+  max-width: 500px;
+}
+
+main section div div img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: lightgray;
+}
+
+.description {
+  color: white;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+:root {
+  --color-primary: #c0392b;
+  --color-primary-dark: #96281b;
+  --color-bg: #111111;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #141414;
+  --color-border: #2e2e2e;
+  --color-text: #f0f0f0;
+  --color-text-muted: #888888;
+  --color-input-bg: #222222;
+  --space: 4px;
+  --radius: 8px;
+}
+
+.header-logo {
+  background-color: var(--color-primary);
+  width: auto;
+  height: auto;
+  color: var(--color-text);
+  font: 1.5em serif;
+  margin: var(--space);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: right;
+}
+
+.header-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  border-color: var(--color-border); ;
+}
+
+.section-titulo {
+  text-align: center;
+  background-color: var(--color-surface);
+  margin: var(--space);
+  color: var(--color-text);
+  font: 1.5em sans-serif;
+  border-radius: auto;
+  border: 1px solid var(--color-border);
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font: 1em sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: right; ;
+}
+
+.pelicula-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space);
+  margin: var(--space);
+  width: 400px;
+  color: var(--color-text);
+  font: 1em sans-serif;;
+  display: flex;
+  flex-direction: column;  
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.pelicula-card img {
+  width: 100%;
+  height: 500px;               
+  object-fit: cover;          
+  object-position: center top; 
+  border-radius: var(--radius);
+}
+
+.paliculas-estrenos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Contenedor de la card */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagen fija en todas las cards */
+.card img {
+  width: 100%;
+  height: 350px;        /* Ajustá este valor a tu gusto */
+  object-fit: cover;    /* Recorta sin deformar */
+  object-position: top; /* Muestra la parte superior (cara del personaje) */
+}

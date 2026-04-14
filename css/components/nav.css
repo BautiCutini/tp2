@@ -19,16 +19,12 @@
     padding: var(--space);
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius);
+    align-items: center;
 }
 
 .nav-links {
     display: flex;
-    gap: 8px;
-    align-items: center;
-    text-align: center;
+    gap: calc(var(--space) * 3);
 }
 
 .nav-link {
