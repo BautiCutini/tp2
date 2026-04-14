@@ -1,64 +1,100 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cine Aurora 📽️ - Mi perfil</title>
-    <meta name="description" content="Cine Aurora - Mi perfil" />
-    <link rel="icon" href="../assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Aurora - Perfil</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components/perfil.css">
+</head>
 
-  <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+<body>
+
+<header class="header">
+  <h1>Cine Aurora</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Estrenos</a>
+    <a href="#">Volver</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HEADER PERFIL -->
+  <section class="perfil-header">
+    <div class="perfil-header-content">
+
+      <div class="avatar-container">
+        <img src="https://via.placeholder.com/150" class="avatar">
+        <div class="avatar-badge">🎬</div>
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
+
+      <div class="user-info">
+        <h2>Hola, John Doe 👋</h2>
+        <p>usuario@example.com</p>
+        <p class="miembro-desde">Miembro desde 2026</p>
       </div>
-    </header>
 
-    <main>
-      <h1>Panel de usuario</h1>
-      <section>
-        <div>
-          <img
-            src="../assets/img/perfil-placeholder.png"
-            alt="Foto de perfil"
-          />
-          <h2>Hola, John Doe 👋📽️!</h2>
-        </div>
-        <div>
-          <p>Nombre completo: John Doe</p>
-          <p>Email: usuario@example.com</p>
-          <p>Fecha de nacimiento: dd/mm/yyyy</p>
-          <p>Contraseña: ********</p>
-          <p>Miembro desde: 2026</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <h3>Películas ya vistas</h3>
-          </div>
-          <div>
-            <ul>
-              <li>🎬 Estreno A - Vista el 10/03</li>
-              <li>🎬 Estreno B - Vista el 15/03</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+      <div class="perfil-actions">
+        <button class="btn btn-primary">Editar</button>
+        <button class="btn btn-secondary">Configuración</button>
+      </div>
 
-    <footer>
-      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <section class="perfil-container">
+
+    <div class="perfil-card">
+
+      <div class="perfil-card-header">
+        <h2>Información personal</h2>
+      </div>
+
+      <div class="perfil-item">
+        <div class="perfil-label">Nombre</div>
+        <div class="perfil-value">John Doe</div>
+      </div>
+
+      <div class="perfil-item">
+        <div class="perfil-label">Email</div>
+        <div class="perfil-value">usuario@example.com</div>
+      </div>
+
+      <div class="perfil-item">
+        <div class="perfil-label">Fecha de nacimiento</div>
+        <div class="perfil-value">dd/mm/yyyy</div>
+      </div>
+
+      <div class="perfil-item">
+        <div class="perfil-label">Contraseña</div>
+        <div class="perfil-value">********</div>
+      </div>
+
+    </div>
+
+    <div class="perfil-card">
+
+      <div class="perfil-card-header">
+        <h2>Películas vistas</h2>
+      </div>
+
+      <ul class="lista-peliculas">
+        <li>🎬 Estreno A - 10/03</li>
+        <li>🎬 Estreno B - 15/03</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Cine Aurora</p>
+</footer>
+
+</body>
 </html>
