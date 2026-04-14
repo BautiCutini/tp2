@@ -1,0 +1,201 @@
+:root {
+  --color-primary: #c0392b;
+  --color-primary-dark: #96281b;
+  --color-primary-light: #e74c3c;
+  --color-bg: #111111;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #141414;
+  --color-border: #2e2e2e;
+  --color-text: #f0f0f0;
+  --color-text-muted: #888888;
+  --color-input-bg: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a 0%, #0b0b0b 70%);
+  color: var(--color-text);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header a {
+  color: var(--color-text);
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header a:hover {
+  color: var(--color-primary);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.perfil-header {
+  position: relative;
+  background: rgba(26,26,26,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.perfil-header::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(192,57,43,0.2), transparent 70%);
+}
+
+.perfil-header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  object-fit: cover;
+  box-shadow: 
+    0 0 8px rgba(192,57,43,0.4),
+    0 0 20px rgba(192,57,43,0.25);
+  transition: 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.avatar-container {
+  position: relative;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--color-primary);
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.user-info h2 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.miembro-desde {
+  color: var(--color-primary);
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: white;
+  box-shadow: 0 4px 15px rgba(192,57,43,0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: white;
+}
+
+.perfil-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.perfil-card {
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.8rem;
+  transition: 0.3s;
+}
+
+.perfil-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px rgba(192, 57, 43, 0.15);
+}
+
+.perfil-card-header {
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1rem;
+}
+
+.perfil-card-header h2 {
+  color: var(--color-primary);
+}
+
+.perfil-item {
+  margin-bottom: 1rem;
+}
+
+.perfil-label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.perfil-value {
+  font-size: 1rem;
+}
+
+.lista-peliculas {
+  padding-left: 1rem;
+}
+
+.lista-peliculas li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.lista-peliculas li:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--color-border);
+}
