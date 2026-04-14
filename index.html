@@ -7,119 +7,90 @@
     <meta name="description" content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo." />
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/components/nav.css"/>
+    <link rel="stylesheet" href="../css/components/footer.css"/>
   </head>
 
   <body>
     <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
-      </div>
-      <div>
-        <nav>
-          <a class="active" href="./index.html">Inicio</a>
-          <a href="./pages/estrenos.html">Próximos estrenos</a>
-          <a href="./pages/login.html">Mi perfil</a>
-        </nav>
-      </div>
+
+      <div class="header-logo">
+  <h1>Cine Aurora</h1>
+  <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+</div>
+<div class="header-nav">
+  <nav class="nav-links">
+    <a href="./index.html" class="nav-link">Inicio</a>
+    <a href="./pages/estrenos.html" class="nav-link">Próximos estrenos</a>
+    <a href="./pages/login.html" class="nav-link">Mi perfil</a>
+  </nav>
+</div>
+        
+          
+          
+        
+      
     </header>
 
     <main>
       <section>
-        <h2>Películas en cartelera</h2>
+        <h2 class="section-titulo">Películas en cartelera</h2>
 
-        <div>
-          <div>
+        <div class="paliculas-estrenos">
+          <div class="pelicula-card">
             <img src="./assets/img/El conjuro.jpg" alt="El Conjuro 4 poster" />
-            <h3>El Conjuro 4</h3>
-            <p>Terror</p>
-            <p class="description"></p>
+            <h1>El Conjuro 4</h1>
+            <h2>Terror</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
           </div>
 
-          <div>
+          <div class="pelicula-card">
             <img src="./assets/img/Toy Story 5.jpeg" alt="Toy Story 5 poster" />
-            <h3>Toy Story 5</h3>
-            <p>Comedia</p>
-            <p class="description"></p>
+            <h1>Toy Story 5</h1>
+            <h2>Comedia</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div></a>
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
+          </div>
 
-          <div>
+          <div class="pelicula-card">
             <img src="./assets/img/PROYECTO FIN DEL MUNDO.jpg" alt="Proyecto Fin del Mundo poster" />
-            <h3>Proyecto Fin del Mundo</h3>
-            <p>Drama Thriller</p>
+            <h1>Proyecto Fin del Mundo</h1>
+            <h2>Drama Thriller</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
           </div>
 
-          <div>
+          <div class="pelicula-card">
             <img src="./assets/img/avatar.jpg" alt="Avatar 3 poster" />
-            <h3>Avatar 3</h3>
-            <p>Acción</p>
+            <h1>Avatar 3</h1>
+            <h2>Acción</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
           </div>
 
-          <div>
-            <img src="./assets/img/MarioGalaxy.jpg" alt="Super Mario Galaxy poster"  />
-            <h3>Super Mario Galaxy</h3>
-            <p>Aventura</p>
+          <div class="pelicula-card">
+            <img src="./assets/img/MarioGalaxy.jpg" alt="Super Mario Galaxy poster" />
+            <h1>Super Mario Galaxy</h1>
+            <h2>Aventura</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
           </div>
 
-          <div>
+          <div class="pelicula-card">
             <img src="./assets/img/Nuremberg-710x1024.jpg" alt="Nuremberg: El Juicio del Siglo poster" />
-            <h3>Nuremberg: El Juicio del Siglo</h3>
-            <p>Drama Thriller</p>
+            <h1>Nuremberg: El Juicio del Siglo</h1>
+            <h2>Drama Thriller</h2>
             <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            <a href="#" onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
+
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
