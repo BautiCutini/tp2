@@ -1,6 +1,8 @@
 # Trabajo práctico N°2:
-
-- Flexbox
-- Grids
-- Media queries
-- Modularización CSS (import url(...))
+- Grupo Numero 1
+  Integrantes:
+  -Bautista Cutini
+  -Lautaro Capdeville
+  -Santino Crivera
+  -Bautista Bartollini
+  -Francesco Di Carli
