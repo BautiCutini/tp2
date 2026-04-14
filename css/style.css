@@ -1,7 +1,7 @@
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
 
 body {
-  background: linear-gradient(to bottom, red, black);
+  background: linear-gradient(to bottom, rgb(0, 0, 0), black);
   color: white;
   font-family: 'Faster One', cursive;
 }
@@ -40,36 +40,7 @@ header img {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-header nav {
-  display: flex;
-  gap: 0.85rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
 
-header nav a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem 1.2rem;
-  border-radius: 999px;
-  text-decoration: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.08);
-  font-weight: 600;
-  transition: transform 0.18s ease, background 0.18s ease;
-}
-
-header nav a:hover,
-header nav a:focus {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.18);
-}
-
-header nav a.active {
-  color: black;
-  background: yellow;
-}
 
 main section div {
   display: grid;
@@ -106,7 +77,104 @@ p {
   margin: 5px 0;
 }
 
-a {
-  color: yellow;
+:root {
+  --color-primary: #c0392b;
+  --color-primary-dark: #96281b;
+  --color-bg: #111111;
+  --color-surface: #1a1a1a;
+  --color-surface-alt: #141414;
+  --color-border: #2e2e2e;
+  --color-text: #f0f0f0;
+  --color-text-muted: #888888;
+  --color-input-bg: #222222;
+  --space: 4px;
+  --radius: 8px;
 }
 
+.header-logo {
+  background-color: var(--color-primary);
+  width: auto;
+  height: auto;
+  color: var(--color-text);
+  font: 1.5em serif;
+  margin: var(--space);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: right;
+}
+
+.header-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  border-color: var(--color-border); ;
+}
+
+.section-titulo {
+  text-align: center;
+  background-color: var(--color-surface);
+  margin: var(--space);
+  color: var(--color-text);
+  font: 1.5em sans-serif;
+  border-radius: auto;
+  border: 1px solid var(--color-border);
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font: 1em sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: right; ;
+}
+
+.pelicula-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space);
+  margin: var(--space);
+  width: 400px;
+  color: var(--color-text);
+  font: 1em sans-serif;;
+  display: flex;
+  flex-direction: column;  
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.pelicula-card img {
+  width: 100%;
+  height: 500px;               
+  object-fit: cover;          
+  object-position: center top; 
+  border-radius: var(--radius);
+}
+
+.paliculas-estrenos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Contenedor de la card */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagen fija en todas las cards */
+.card img {
+  width: 100%;
+  height: 350px;        /* Ajustá este valor a tu gusto */
+  object-fit: cover;    /* Recorta sin deformar */
+  object-position: top; /* Muestra la parte superior (cara del personaje) */
+}
