@@ -1,4 +1,4 @@
-/* 🔷 Variables de colores */
+
 :root {
   --color-primary: #c0392b;
   --color-primary-dark: #96281b;
@@ -91,7 +91,7 @@ form button {
   transition: 0.3s;
 }
 
-
+/* 🔷 Hover */
 form button:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
@@ -101,7 +101,7 @@ form button:active {
   transform: translateY(0);
 }
 
-
+/* 🔷 Texto */
 form p {
   text-align: center;
   font-size: 0.9rem;
@@ -109,7 +109,7 @@ form p {
   margin: 0;
 }
 
-
+/* 🔷 Link */
 form a {
   color: var(--color-primary);
   text-decoration: none;
@@ -120,7 +120,7 @@ form a:hover {
   text-decoration: underline;
 }
 
-
+/* 🔷 Responsive */
 @media (max-width: 480px) {
   form {
     padding: 1.5rem;
