@@ -1,5 +1,5 @@
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
-
+@import url(./components/detalle.css);
 body {
   background: linear-gradient(to bottom, rgb(0, 0, 0), black);
   color: white;
